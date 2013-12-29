@@ -4,7 +4,8 @@
     <title></title>
 </head>
 <body>
-<form id="add_gay"  method="post" >
+<form id="add_gay"  method="post" action="/post_add_gays/">
+    {% csrf_token %}
     <table >
         <tr>
             <td>
@@ -16,10 +17,10 @@
         </tr>
         <tr>
             <td>
-                <input id="name">
+                <input id="name" name="name">
             </td>
             <td>
-                <input id="age">
+                <input id="age" name="age">
             </td>
         </tr>
     </table>

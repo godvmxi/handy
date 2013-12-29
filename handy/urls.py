@@ -4,6 +4,7 @@ from django.conf.urls import patterns, include, url
 from django.contrib import admin
 # admin.autodiscover()
 from markme import  views
+import markme
 
 urlpatterns = patterns('',
     # Examples:
@@ -16,6 +17,8 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
     url(r'^latest/$', views.latest_gays),
-    url(r'^add/$', views.add_gay),
+    url(r'^add/$', views.show_add_page),
+    url(r'^$',markme.views.indexPage),
+    url(r'^post_add_gays/$',markme.views.post_add_gays)
 )
 
