@@ -19,6 +19,7 @@ urlpatterns = patterns('',
     url(r'^latest/$', views.latest_gays),
     url(r'^add/$', views.show_add_page),
     url(r'^$',markme.views.indexPage),
+    url(r'^test/$',markme.views.indexPage),
     url(r'^post_add_gays/$',markme.views.post_add_gays)
 )
 

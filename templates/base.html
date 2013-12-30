@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        {% block title %}一些内容，这里可不填{% endblock %}
+    </title>
+</head>
+<body>
+<div>
+    {% include "header.html" %}
+</div>
+<div>
+        {% block content %}一些内容，这里可不填{% endblock %}
+</div>
+
+<div>
+   {% block footer %}一些内容，这里可不填??{% endblock %}
+</div>
+
+<div>
+    {% include "footer.html" %}
+</div>
+</body>
+</html>

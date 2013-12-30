@@ -2,8 +2,18 @@
 <body>
 <h1>Gays Latest Coming...</h1>
 <ul>
-{% for book in book_list %}
-<li>{{ book.name }}</li>
-{% endfor %}
+<table>
+    <tr>
+        <td>姓名</td>
+        <td>年龄</td>
+    </tr>
+    {% for gay in gays_list %}
+    <tr>
+        <td>{{ gay.name }}</td>
+        <td>{{ gay.age }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
 </ul>
 </body></html>
