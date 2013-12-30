@@ -1,28 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Index</title>
-</head>
-<body>
-
-<table>
-    <tr>I am Index page!!</tr>
-    <tr>
-
-        <td><a href="/admin/">管理</a> </td>
-    </tr>
-    <tr>
-        <td><a href="/add/">添加</a> </td>
-    </tr>
-    <tr>
-        <td><a href="/latest/">最新</a> </td>
-    </tr>
-    <tr>
-        <td><a href="/">主页</a> </td>
-    </tr>
-
-</table>
-
-
-</body>
-</html>
+{% extends "base.html" %}
+{% block title %}I am the Index Page{% endblock %}
+{% block content %} {{ current_date }}.{% endblock %}

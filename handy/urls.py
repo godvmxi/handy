@@ -17,7 +17,7 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
     url(r'^latest/$', views.latest_gays),
-    url(r'^add/$', views.show_add_page),
+    url(r'^add/$', views.post_add_gays),
     url(r'^$',markme.views.indexPage),
     url(r'^test/$',markme.views.indexPage),
     url(r'^post_add_gays/$',markme.views.post_add_gays)

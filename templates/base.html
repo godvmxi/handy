@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>
-        {% block title %}一些内容，这里可不填{% endblock %}
+        {% block title %}{% endblock %}
     </title>
 </head>
 <body>
@@ -10,11 +10,11 @@
     {% include "header.html" %}
 </div>
 <div>
-        {% block content %}一些内容，这里可不填{% endblock %}
+        {% block content %}{% endblock %}
 </div>
 
 <div>
-   {% block footer %}一些内容，这里可不填??{% endblock %}
+   {% block footer %}{% endblock %}
 </div>
 
 <div>
