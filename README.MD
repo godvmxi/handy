@@ -16,4 +16,5 @@ github地址：
 chinaos地址：https://github.com/godvmxi/handy
 开源中国地址：http://git.oschina.net/godvmxi/handy_charity
 代码属于Django项目，涉及技术包括lbs，公共主页技术等。
-本项目为公益项目，欢迎有兴趣的朋友加入，
+本项目为公益项目，欢迎有兴趣的朋友加入。
+本人web开发属于新手入门，希望大家清吐槽。
