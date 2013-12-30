@@ -9,4 +9,6 @@ class PoorGays(models.Model):
     #picture = models.CharField(max_length=50)
     # birthday = models.DateField()
 
+    def __unicode__(self):
+        return self.name
 
