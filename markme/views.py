@@ -9,6 +9,7 @@ from django.core.context_processors import csrf
 from django import forms
 
 class PoorGaysForm(forms.Form):
+    id = forms.IntegerField(required=False)
     name = forms.CharField()
     age = forms.IntegerField()
     # age = forms.EmailField(required=False)
@@ -16,7 +17,7 @@ class PoorGaysForm(forms.Form):
 
 def list_gays(request):
     gays_list = PoorGays.objects.order_by('-name')[:10]
-    return render_to_response('latest_gays.html', {'gays_list': gays_list})
+    return render_to_response('list_gays.html', {'gays_list': gays_list})
 def show_add_page(request):
     print 'I am here'
     print request.method
@@ -33,10 +34,10 @@ def add_gay(request):
         p = PoorGays(name=post.get('name'),age=post.get('age'))
         p.save()
         # ... view code here
-        return HttpResponseRedirect('/latest/')
+        return HttpResponseRedirect('/list/')
     elif request.method == 'GET' :
         print 'POST ADD Action-> GET'
-        form = PoorGaysForm()
+        form = PoorGaysForm(initial={'id':0 } )
         print form.as_table()
         c = {'form':form}
         return render_to_response("add_gay.html",c,context_instance=RequestContext(request))
@@ -46,10 +47,6 @@ def add_gay(request):
         print 'POST ADD Action-> ?? %s' %request.method
         print 'Post Data-->-- %s  %s'%(post.get('name'),post.get('age'))
         return HttpResponseRedirect('/')
-
-
-
-
 def indexPage(request):
     print 'index page-->%s'%request.method
     return render_to_response('extend.html')
@@ -57,31 +54,40 @@ def indexPage(request):
 
 
 def edit_gay(request,gay_id):
-    print 'edit gay'
-    print 'gay_id --> %s %s'%(gay_id,type(gay_id))
+    print 'gay_id --> %s %s%s'%(gay_id,type(gay_id),request.method)
     if request.method == 'GET' and gay_id != None:
         print 'input gay id-->  %s'%gay_id
         p = PoorGays.objects.filter(id=gay_id)[0]
-        print p
-        print request.GET
-
-        form = PoorGaysForm(
-            initial={'name':p.name,'age':p.age}
-        )
-        print form.as_table()
-        form.name = p.name
-        form.age = p.age
-        print form.name
-        print form.age
+        form = PoorGaysForm( initial={'name':p.name,'age':p.age,'id':p.id } )
         c = {'form':form}
         return render_to_response("edit_gay.html",c,context_instance=RequestContext(request))
         # return render_to_response('edit_gay.html',)
     elif request.method == 'POST':
         print request.POST
-        return HttpResponseRedirect('/latest/')
+        print gay_id
+        form = PoorGaysForm(request.POST)
+        if form.is_valid() :
+            cd = form.cleaned_data
+            p= PoorGays.objects.filter(id=cd['id'])[0]
+            p.name = cd['name']
+            p.age = cd['age']
+            p.save()
+            return HttpResponseRedirect('/listall/')
+        else :
+            return Http404
+
+
     elif request.method == 'PUT':
         print request
-        return HttpResponseRedirect('/latest/')
+        return HttpResponseRedirect('/list/')
     else:
         return Http404
-    pass
+def delete_gay(request,gay_id):
+    if request.method == 'GET':
+        print 'delete gay id --> %s '%(gay_id)
+        p = PoorGays.objects.filter(id=gay_id)[0]
+        print p
+        p.delete()
+        return HttpResponseRedirect('/')
+    else:
+        return Http404

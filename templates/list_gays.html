@@ -14,7 +14,8 @@
     <tr>
         <td>{{ gay.name }}</td>
         <td>{{ gay.age }}</td>
-        <td><a href="/edit/{{ gay.id }}">edit</a></td>
+        <td><a href="/list/{{ gay.id }}">edit</a></td>
+        <td><a href="{{ gay.id }}/delete/">delete</a></td>
     </tr>
     {% endfor %}
 </table>
