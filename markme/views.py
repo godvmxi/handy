@@ -49,13 +49,20 @@ def add_gay(request):
         return HttpResponseRedirect('/')
 def indexPage(request):
     print 'index page-->%s'%request.method
-    return render_to_response('extend.html')
+    try:
+        gay_id = request.session['gay_id']
+    except :
+        gay_id = 'can not find gay id'
+    return render_to_response('extend.html',{'gay_id':gay_id})
     return render_to_response('index.html')
 
 
 def edit_gay(request,gay_id):
     print 'gay_id --> %s %s%s'%(gay_id,type(gay_id),request.method)
+
     if request.method == 'GET' and gay_id != None:
+        request.session['gay_id']=gay_id
+
         print 'input gay id-->  %s'%gay_id
         p = PoorGays.objects.filter(id=gay_id)[0]
         form = PoorGaysForm( initial={'name':p.name,'age':p.age,'id':p.id } )
@@ -91,3 +98,17 @@ def delete_gay(request,gay_id):
         return HttpResponseRedirect('/')
     else:
         return Http404
+def request_cookie(request):
+    if "favorite_color" in request.COOKIES:
+        return HttpResponse("Your favorite color is %s" %request.COOKIES["favorite_color"])
+    else:
+
+        response = HttpResponse("Your do not have favorite color is now,we will set it" )
+
+        # ... and set a cookie on the response
+        response.set_cookie("favorite_color",
+                            'blue')
+
+        return response
+        return HttpResponse("You don't have a favorite color.")
+    pass

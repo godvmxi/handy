@@ -21,5 +21,6 @@ urlpatterns = patterns('',
     url(r'^$',markme.views.indexPage),
     url(r'^list/(\d{1,10})/$',markme.views.edit_gay),
     url(r'^list/(\d)/delete/$',markme.views.delete_gay),
+    url(r'^cookie/$',markme.views.request_cookie),
 )
 
