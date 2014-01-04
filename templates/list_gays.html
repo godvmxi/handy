@@ -9,12 +9,15 @@
     <tr>
         <td>姓名</td>
         <td>年龄</td>
+        <td>相片</td>
     </tr>
     {% for gay in gays_list %}
     <tr>
         <td>{{ gay.name }}</td>
         <td>{{ gay.age }}</td>
-        <td><a href="/list/{{ gay.id }}">edit</a></td>
+        <td>{{ gay.picture }}</td>
+        <td><a href="/detail/{{ gay.id }}">detail</a></td>
+        <td><a href="/edit/{{ gay.id }}">edit</a></td>
         <td><a href="{{ gay.id }}/delete/">delete</a></td>
     </tr>
     {% endfor %}

@@ -14,6 +14,7 @@ class PoorGaysForm(forms.Form):
     age = forms.IntegerField()
     # age = forms.EmailField(required=False)
     # message = forms.CharField()
+    picture = forms.ImageField(label=u'pci')
 
 def list_gays(request):
     gays_list = PoorGays.objects.order_by('-name')[:10]
@@ -29,16 +30,21 @@ def add_gay(request):
     if request.method == 'POST':
         print 'POST ADD Action-> POST'
         post =  request.POST
-        print 'Post Data-->++ %s  %s'%(post.get('name'),post.get('age'))
-        print request.POST
-        p = PoorGays(name=post.get('name'),age=post.get('age'))
+        print 'Post Data--> %s  %s'%(post.get('name'),post.get('age'))
+
+        # form = PoorGaysForm(request.POST)
+        print 'file--> %s'%request.FILES
+        print 'post--> %s'%request.POST
+        # f = request.FILES["picture"]
+        p = PoorGays(name=post.get('name'),age=post.get('age'),picture=request.FILES.get('picture'))
         p.save()
+
         # ... view code here
         return HttpResponseRedirect('/list/')
     elif request.method == 'GET' :
-        print 'POST ADD Action-> GET'
+        # print 'POST ADD Action-> GET'
         form = PoorGaysForm(initial={'id':0 } )
-        print form.as_table()
+        # print form.as_table()
         c = {'form':form}
         return render_to_response("add_gay.html",c,context_instance=RequestContext(request))
     else :
@@ -53,8 +59,8 @@ def indexPage(request):
         gay_id = request.session['gay_id']
     except :
         gay_id = 'can not find gay id'
-    return render_to_response('extend.html',{'gay_id':gay_id})
-    return render_to_response('index.html')
+    # return render_to_response('extend.html',{'gay_id':gay_id})
+    return render_to_response('index.html',{'gay_id':gay_id})
 
 
 def edit_gay(request,gay_id):
@@ -82,11 +88,21 @@ def edit_gay(request,gay_id):
             return HttpResponseRedirect('/listall/')
         else :
             return Http404
+    else:
+        return Http404
+def detail_gay(request,gay_id):
+    print 'detail gay_id --> %s %s%s'%(gay_id,type(gay_id),request.method)
 
-
-    elif request.method == 'PUT':
-        print request
-        return HttpResponseRedirect('/list/')
+    if request.method == 'GET' and gay_id != None:
+        request.session['gay_id']=gay_id
+        print 'input gay id-->  %s'%gay_id
+        p = PoorGays.objects.filter(id=gay_id)
+        if len(p) < 0:
+            c = {'detail':None}
+        c = {'detail':p[0]}
+        print p[0].name
+        return render_to_response("detail_gay.html",c)
+        # return render_to_response('edit_gay.html',)
     else:
         return Http404
 def delete_gay(request,gay_id):
@@ -94,8 +110,13 @@ def delete_gay(request,gay_id):
         print 'delete gay id --> %s '%(gay_id)
         p = PoorGays.objects.filter(id=gay_id)[0]
         print p
-        p.delete()
-        return HttpResponseRedirect('/')
+        try :
+            p.delete()
+        except Exception as inst :
+            print 'delete file exception-> %s'%inst
+        finally:
+            return HttpResponseRedirect('/list/')
+
     else:
         return Http404
 def request_cookie(request):

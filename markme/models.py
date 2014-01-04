@@ -6,7 +6,7 @@ class PoorGays(models.Model):
     age = models.IntegerField()
     # sex = models.IntegerField()
     #age = models.IntegerField()
-    #picture = models.CharField(max_length=50)
+    picture = models.ImageField(upload_to='photos/%Y/%m/%d', blank=True,null=True)
     # birthday = models.DateField()
 
     def __unicode__(self):

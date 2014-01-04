@@ -16,11 +16,12 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^listall/$', views.list_gays),
+    url(r'^list/$', views.list_gays),
     url(r'^add/$', views.add_gay),
     url(r'^$',markme.views.indexPage),
-    url(r'^list/(\d{1,10})/$',markme.views.edit_gay),
-    url(r'^list/(\d)/delete/$',markme.views.delete_gay),
+    url(r'^edit/(\d{1,10})/$',markme.views.edit_gay),
+    url(r'^detail/(\d{1,10})/$',markme.views.detail_gay),
+    url(r'^list/(\d{1,10})/delete/$',markme.views.delete_gay),
     url(r'^cookie/$',markme.views.request_cookie),
 )
 

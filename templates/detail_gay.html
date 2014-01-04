@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}edit some gays{% endblock %}
+{% block content %}
+<div>
+    {% if not detail  %}
+            <p style="color: red;">
+                Please correct the error{{ form.errors|pluralize }} below.
+            </p>
+     {% else  %}
+        <div>{{ detail.name }}</div>
+        <div>{{ detail.age }}</div>
+        <div> <img src='{{ detail.picture.url }}'> </div>
+    {% endif %}
+
+</div>
+{% endblock %}
