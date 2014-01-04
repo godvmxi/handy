@@ -35,7 +35,15 @@ def add_gay(request):
         # form = PoorGaysForm(request.POST)
         print 'file--> %s'%request.FILES
         print 'post--> %s'%request.POST
+        # should add more code to deal upload ifle type and deal picture size
         # f = request.FILES["picture"]
+        #  f = request.FILES["imagefile"]
+        # parser = ImageFile.Parser()
+        # for chunk in f.chunks():
+        #     parser.feed(chunk)
+        # img = parser.close()
+        #name = '%s%s' % (settings.MEDIA_ROOT, f.name)
+        # img.save("yoursavepath")
         p = PoorGays(name=post.get('name'),age=post.get('age'),picture=request.FILES.get('picture'))
         p.save()
 
@@ -97,10 +105,9 @@ def detail_gay(request,gay_id):
         request.session['gay_id']=gay_id
         print 'input gay id-->  %s'%gay_id
         p = PoorGays.objects.filter(id=gay_id)
-        if len(p) < 0:
+        if len(p) != 1:
             c = {'detail':None}
         c = {'detail':p[0]}
-        print p[0].name
         return render_to_response("detail_gay.html",c)
         # return render_to_response('edit_gay.html',)
     else:

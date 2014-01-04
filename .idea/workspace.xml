@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="feb09e98-04af-494e-a202-cfbaa624092e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/photos/2014/01/04/360.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/photos/2014/01/04/360_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/photos/2014/01/04/360_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/photos/2014/01/04/360_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/photos/2014/01/04/360_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/photos/2014/01/04/4.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/photos/2014/01/04/config.bin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/detail_gay.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devdb.s3db" afterPath="$PROJECT_DIR$/devdb.s3db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/add_gay.html" afterPath="$PROJECT_DIR$/templates/add_gay.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/footer.html" afterPath="$PROJECT_DIR$/templates/footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/list_gays.html" afterPath="$PROJECT_DIR$/templates/list_gays.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markme/models.py" afterPath="$PROJECT_DIR$/markme/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/handy/urls.py" afterPath="$PROJECT_DIR$/handy/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markme/views.py" afterPath="$PROJECT_DIR$/markme/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -52,7 +38,7 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/markme/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="22" selection-start="3504" selection-end="3504" vertical-scroll-proportion="0.0" vertical-offset="1672" max-vertical-offset="2679">
+            <state line="115" column="31" selection-start="4165" selection-end="4165" vertical-scroll-proportion="0.0" vertical-offset="1805" max-vertical-offset="2812">
               <folding>
                 <element signature="e#27#74#0" expanded="true" />
               </folding>
@@ -60,42 +46,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/header.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="7" selection-start="279" selection-end="279" vertical-scroll-proportion="-8.142858" vertical-offset="0" max-vertical-offset="342">
-              <folding>
-                <marker date="1388838539364" expanded="true" signature="4:82" placeholder="..." />
-                <marker date="1388838539364" expanded="true" signature="88:191" placeholder="..." />
-                <marker date="1388838539364" expanded="true" signature="125:135" placeholder="..." />
-                <marker date="1388838539364" expanded="true" signature="197:278" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="29" selection-start="98" selection-end="98" vertical-scroll-proportion="-1.3571428" vertical-offset="0" max-vertical-offset="152">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list_gays.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/list_gays.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="28" selection-start="425" selection-end="431" vertical-scroll-proportion="-7.357143" vertical-offset="136" max-vertical-offset="608">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="detail_gay.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="detail_gay.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/detail_gay.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="6" selection-start="422" selection-end="422" vertical-scroll-proportion="0.68911916" vertical-offset="0" max-vertical-offset="399">
+            <state line="15" column="14" selection-start="437" selection-end="437" vertical-scroll-proportion="-10.178572" vertical-offset="0" max-vertical-offset="399">
               <folding>
                 <element signature="e#138#157#0" expanded="true" />
               </folding>
@@ -103,43 +57,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add_gay.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/add_gay.html">
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/handy/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="6" selection-start="520" selection-end="520" vertical-scroll-proportion="-11.321428" vertical-offset="25" max-vertical-offset="475">
-              <folding>
-                <marker date="1388836382505" expanded="true" signature="95:519" placeholder="..." />
-                <marker date="1388836382505" expanded="false" signature="144:155" placeholder="..." />
-                <marker date="1388836382505" expanded="true" signature="156:248" placeholder="..." />
-                <marker date="1388836382505" expanded="true" signature="331:511" placeholder="..." />
-                <marker date="1388836382505" expanded="true" signature="372:421" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit_gay.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/edit_gay.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="33" selection-start="301" selection-end="301" vertical-scroll-proportion="-4.607143" vertical-offset="61" max-vertical-offset="475">
+            <state line="58" column="17" selection-start="2067" selection-end="2067" vertical-scroll-proportion="0.0" vertical-offset="437" max-vertical-offset="3097">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/footer.html">
+      <file leaf-file-name="urls.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/handy/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="8" selection-start="335" selection-end="335" vertical-scroll-proportion="-8.0" vertical-offset="42" max-vertical-offset="456">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="extend.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/extend.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="30" selection-start="0" selection-end="131" vertical-scroll-proportion="-0.6785714" vertical-offset="0" max-vertical-offset="152">
+            <state line="31" column="1" selection-start="1215" selection-end="1215" vertical-scroll-proportion="0.67874396" vertical-offset="308" max-vertical-offset="722">
               <folding />
             </state>
           </provider>
@@ -178,12 +108,12 @@
         <option value="$PROJECT_DIR$/templates/footer.html" />
         <option value="$PROJECT_DIR$/handy/settings.py" />
         <option value="$PROJECT_DIR$/templates/list_gays.html" />
-        <option value="$PROJECT_DIR$/handy/urls.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/header.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/markme/views.py" />
         <option value="$PROJECT_DIR$/templates/detail_gay.html" />
+        <option value="$PROJECT_DIR$/markme/views.py" />
+        <option value="$PROJECT_DIR$/handy/urls.py" />
       </list>
     </option>
   </component>
@@ -785,12 +715,16 @@
       <created>1388837683867</created>
       <updated>1388837683867</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add detail display page and wait for pic display">
+      <created>1388839825987</created>
+      <updated>1388839825987</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884097" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884097" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -798,7 +732,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21625" sideWeight="0.5929919" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21625" sideWeight="0.5929919" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40700808" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3207547" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -831,7 +765,8 @@
     <MESSAGE value="add admin page and manual setting page" />
     <MESSAGE value="test cookie and session" />
     <MESSAGE value="add update file func and set media root" />
-    <option name="LAST_COMMIT_MESSAGE" value="add update file func and set media root" />
+    <MESSAGE value="add detail display page and wait for pic display" />
+    <option name="LAST_COMMIT_MESSAGE" value="add detail display page and wait for pic display" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -873,23 +808,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handy/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="17" selection-start="2067" selection-end="2067" vertical-scroll-proportion="0.68380463" vertical-offset="836" max-vertical-offset="3097">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="4" selection-start="165" selection-end="165" vertical-scroll-proportion="-4.071429" vertical-offset="114" max-vertical-offset="551">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handy/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="55" selection-start="796" selection-end="806" vertical-scroll-proportion="0.6956522" vertical-offset="130" max-vertical-offset="627">
           <folding />
         </state>
       </provider>
@@ -905,11 +826,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="6" selection-start="520" selection-end="520" vertical-scroll-proportion="-11.321428" vertical-offset="25" max-vertical-offset="475">
           <folding>
-            <marker date="1388836382505" expanded="true" signature="95:519" placeholder="..." />
-            <marker date="1388836382505" expanded="false" signature="144:155" placeholder="..." />
-            <marker date="1388836382505" expanded="true" signature="156:248" placeholder="..." />
-            <marker date="1388836382505" expanded="true" signature="331:511" placeholder="..." />
-            <marker date="1388836382505" expanded="true" signature="372:421" placeholder="..." />
+            <marker date="1388836382505" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1388836382505" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1388836382505" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1388836382505" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1388836382505" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -921,39 +842,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/extend.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="30" selection-start="0" selection-end="131" vertical-scroll-proportion="-0.6785714" vertical-offset="0" max-vertical-offset="152">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="8" selection-start="335" selection-end="335" vertical-scroll-proportion="-8.0" vertical-offset="42" max-vertical-offset="456">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="7" selection-start="279" selection-end="279" vertical-scroll-proportion="-8.142858" vertical-offset="0" max-vertical-offset="342">
-          <folding>
-            <marker date="1388838539364" expanded="true" signature="4:82" placeholder="..." />
-            <marker date="1388838539364" expanded="true" signature="88:191" placeholder="..." />
-            <marker date="1388838539364" expanded="true" signature="125:135" placeholder="..." />
-            <marker date="1388838539364" expanded="true" signature="197:278" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="29" selection-start="98" selection-end="98" vertical-scroll-proportion="-1.3571428" vertical-offset="0" max-vertical-offset="152">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/list_gays.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="28" selection-start="425" selection-end="431" vertical-scroll-proportion="-7.357143" vertical-offset="136" max-vertical-offset="608">
@@ -961,21 +849,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="8" selection-start="335" selection-end="335" vertical-scroll-proportion="0.5803109" vertical-offset="42" max-vertical-offset="456">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="29" selection-start="98" selection-end="98" vertical-scroll-proportion="0.098445594" vertical-offset="0" max-vertical-offset="386">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="7" selection-start="279" selection-end="279" vertical-scroll-proportion="0.59067357" vertical-offset="0" max-vertical-offset="386">
+          <folding>
+            <element signature="n#style#0;n#ui#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/extend.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="30" selection-start="0" selection-end="131" vertical-scroll-proportion="0.049222797" vertical-offset="0" max-vertical-offset="386">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/detail_gay.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="14" selection-start="437" selection-end="437" vertical-scroll-proportion="-10.178572" vertical-offset="0" max-vertical-offset="399">
+          <folding>
+            <element signature="e#138#157#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/markme/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="22" selection-start="3504" selection-end="3504" vertical-scroll-proportion="0.0" vertical-offset="1672" max-vertical-offset="2679">
+        <state line="115" column="31" selection-start="4165" selection-end="4165" vertical-scroll-proportion="0.0" vertical-offset="1805" max-vertical-offset="2812">
           <folding>
             <element signature="e#27#74#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/detail_gay.html">
+    <entry file="file://$PROJECT_DIR$/handy/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="6" selection-start="422" selection-end="422" vertical-scroll-proportion="0.68911916" vertical-offset="0" max-vertical-offset="399">
-          <folding>
-            <element signature="e#138#157#0" expanded="true" />
-          </folding>
+        <state line="58" column="17" selection-start="2067" selection-end="2067" vertical-scroll-proportion="0.0" vertical-offset="722" max-vertical-offset="3097">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handy/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="1" selection-start="1215" selection-end="1215" vertical-scroll-proportion="0.67874396" vertical-offset="308" max-vertical-offset="722">
+          <folding />
         </state>
       </provider>
     </entry>
